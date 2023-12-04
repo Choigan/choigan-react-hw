@@ -1,0 +1,32 @@
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.Profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.MainInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 150px;
+}
+
+.Info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.redText {
+  color: red;
+}
