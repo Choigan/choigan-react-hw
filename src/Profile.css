@@ -6,27 +6,25 @@
     transform: rotate(360deg);
   }
 }
-.Profile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+.main {
+  margin: 25px;
 }
 
-.MainInfo {
+.info {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 150px;
+  flex-direction: row;
+  gap: 25px;
 }
 
-.Info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.profilePicture {
+  height: 300px;
+  width: auto;
 }
 
-.redText {
-  color: red;
+.profilePicture > img {
+  height: 100%;
+}
+
+.fontBlack {
+  font-weight: 700;
 }

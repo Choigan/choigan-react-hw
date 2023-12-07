@@ -1,35 +1,37 @@
 import React from "react";
 import "./Profile.css";
-
-const ProfilePicture = (
-  <img
-    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzCW8ayM9K_iNzX81NSjgpGcl30jDvsTSiIg&usqp=CAU"
-    alt="Картинка профиля"
-  />
-);
-const ProfileName: string = "Choigan Ondar";
-const ProfileBio = <p>Обучаюсь в MathHub на Full Stack Developer</p>;
-const ProfileCitation = <p>В моем словаре нет слова «невозможно»</p>;
-const ProfileHobbies = <p>Футбол, Онлайн Шутеры, Шахматы</p>;
+import ProfileCitation from "./profileCitation";
+import ProfileHobbies from "./profileHobbies";
+import ProfileName from "./profileName";
+import ProfilePicture from "./profilePicture";
+import ProfileBio from "./profileBio";
 
 function Profile() {
   return (
-    <div className="Profile">
-      <div className="MainInfo">
-        {ProfilePicture}
-        {ProfileName}
+    <div className="main">
+      <div className="info">
+        <div>
+          <ProfilePicture />
+        </div>
+        <div>
+          <div>
+            <ProfileName />
+          </div>
+          <div>
+            <span className="fontBlack">Цитата: </span>
+            <ProfileCitation />
+          </div>
+          <br />
+          <div>
+            <span className="fontBlack">Хобби: </span>
+            <ProfileHobbies />
+          </div>
+        </div>
       </div>
-      <br />
-      <hr />
-      <div className="Info">
-        <div className="redText">Краткое описание профиля:</div>
-        {ProfileBio}
-        <br />
-        <div className="redText">Любимая цитата:</div>
-        {ProfileCitation}
-        <br />
-        <div className="redText">Увлечения:</div>
-        {ProfileHobbies}
+
+      <div className="bio">
+        <p className="fontBlack">Биография</p>
+        <ProfileBio />
       </div>
     </div>
   );
