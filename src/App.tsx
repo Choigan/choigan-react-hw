@@ -1,23 +1,28 @@
 import React from "react";
 import "./App.css";
-import { type } from "os";
-
-type userNameDataProps = {
-  userName: string;
-};
-
-const userData = {
-  userName: "Джон Уик",
-};
-
-const UserNameWrite = (props: userNameDataProps) => {
-  return <div>{props.userName}</div>;
-};
+import Counter from "./components/Counter";
+import Profile from "./components/profile/Profile";
+import UserData from "./components/profile/UserData";
+import "./components/counter.css";
 
 function App() {
   return (
     <div>
-      <UserNameWrite userName={userData.userName} />
+      <Profile
+        userName={UserData[0].userName}
+        userCitation={UserData[0].userCitation}
+        userHobbies={UserData[0].userHobbies}
+        userPictureSRC={UserData[0].userPictureSRC}
+        userBio={UserData[0].userBio}
+      />
+      <Profile
+        userName={UserData[1].userName}
+        userCitation={UserData[1].userCitation}
+        userHobbies={UserData[1].userHobbies}
+        userPictureSRC={UserData[1].userPictureSRC}
+        userBio={UserData[1].userBio}
+      />
+      <Counter />
     </div>
   );
 }

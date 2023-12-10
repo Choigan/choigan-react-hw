@@ -1,0 +1,26 @@
+.data__container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-bottom: 40px;
+}
+
+.data__items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.img__and__name > .user__img {
+  width: 200px;
+}
+
+.block {
+  display: flex;
+  gap: 10px;
+}
+
+.b__text {
+  font-weight: 700;
+}
